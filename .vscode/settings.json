@@ -1,0 +1,84 @@
+{
+    //--------------------- 内置设置 -----------------------
+    "editor.insertSpaces": true,
+    "editor.guides.bracketPairs": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.fontSize": 18,
+    "editor.fontWeight": "400",
+    "editor.lineNumbers": "on",
+    "editor.lineHeight": 24,
+    "editor.letterSpacing": 0.5,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.rulers": [
+        120
+    ],
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.tabSize": 4,
+    "editor.wordWrap": "off",
+    //--------------------- 文件设置 -----------------------
+    "files.eol": "\n",
+    "files.autoSave": "onWindowChange",
+    "files.autoSaveDelay": 2000,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.history": true
+    },
+    //--------------------- 文件夹设置 ---------------------
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    //--------------------- 终端设置 -----------------------
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.confirmOnExit": "always",
+    "terminal.integrated.copyOnSelection": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.terminal.copySelection",
+        "workbench.action.terminal.paste",
+    ],
+    "terminal.integrated.lineHeight": 1.2,
+    "terminal.integrated.letterSpacing": 0.1,
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "Lucida Console",
+    "terminal.integrated.cursorStyle": "line",
+    //--------------------- 扩展设置 -----------------------
+    "extensions.ignoreRecommendations": false,
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    //--------------------- 工作台设置 ----------------------
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "Monokai",
+    //--------------------- TODO设置 -----------------------
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "foreground": "#000",
+            "background": "#cecb32",
+            "iconColour": "#fffc43"
+        },
+        "FIXME": {
+            "icon": "alert",
+            "foreground": "#fff",
+            "background": "#ca4848",
+            "iconColour": "#ff4343"
+        }
+    },
+    "todo-tree.highlights.defaultHighlight": {
+        "type": "text"
+    },
+    "todo-tree.tree.showCurrentScanMode": true,
+    //--------------------- python设置 ----------------------
+    "python.defaultInterpreterPath": "D:/miniconda3/python.exe",
+    //--------------------- git设置 ----------------------
+    // "git.path": "D:/Git/bin/git.exe",
+    // "git.confirmSync": false,
+    //--------------------- c++设置 ----------------------
+    "C_Cpp.clang_format_path": "C:/Users/yangliuly1/.vscode/extensions/ms-vscode.cpptools-1.10.7-win32-x64/LLVM/bin/clang-format.exe",
+    //--------------------- cmake设置 ----------------------
+    "cmake.configureOnOpen": false
+}

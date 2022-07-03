@@ -1,0 +1,75 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "createBuildDir",
+			"command": "mkdir",
+			"args": [
+				"-p",
+				"build"
+			],
+			"windows": {
+				"options": {
+					"shell": {
+						"executable": "powershell.exe"
+					}
+				},
+				"args": [
+					"-Force",
+					"build"
+				]
+			},
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"type": "shell",
+			"label": "cmakeRun",
+			"command": "cmake",
+			"args": [
+				".."
+			],
+			"windows": {
+				"options": {
+					"shell": {
+						"executable": "powershell.exe"
+					}
+				},
+				"args": [
+					"-DCMAKE_MAKE_PROGRAM=D:/mingw64/bin/mingw32-make.exe",
+					"-G",
+					"\\\"Unix Makefiles\\\"",
+					"../"
+				]
+			},
+			"options": {
+				"cwd": "${workspaceFolder}/build"
+			},
+			"dependsOn": [
+				"CreateBuildDir"
+			],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "shell",
+			"label": "makeRun",
+			"command": "make", //TODO:Win平台 mingw32-make.exe修改为make.exe
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}/build"
+			},
+			"dependsOn": [
+				"cmakeRun"
+			]
+		}
+	],
+}
